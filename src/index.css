@@ -1,0 +1,10 @@
+@import "tailwindcss";
+
+:root { --hud-top: 4.2rem; }
+button, select { cursor: pointer; }
+button:disabled { cursor: not-allowed; }
+button:focus-visible, select:focus-visible { outline: 2px solid #d5bcff; outline-offset: 2px; }
+@media (max-width: 760px) {
+  :root { --hud-top: 8rem; }
+  .world-topbar { z-index: 35; }
+}
